@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Hollow Signal 🕹️🌑
 
-# Run and deploy your AI Studio app
+**Hollow Signal** is an atmospheric 2D psychological horror experience developed with the **Godot Engine**. The project focuses on procedural storytelling and immersive environmental horror, driven by a complex decoupled script architecture.
 
-This contains everything you need to run your app locally.
+## 🚀 Key Technical Systems (GDScript)
 
-View your app in AI Studio: https://ai.studio/apps/dc8e43d0-f619-45b2-81ab-a3d40bf79dac
+* **Procedural Horror Engine:** Implements `ProceduralHorror.gd` and `LevelGenerator.gd` to create unpredictable environments and high replayability.
+* **Mental & Sanity Systems:** A dedicated `MentalSystem.gd` that tracks player psychological state, affecting world perception and gameplay mechanics.
+* **Advanced Game Logic:** Robust management of game states through `AchievementManager.gd`, `DecisionSystem.gd`, and `DialogueSystem.gd`.
+* **Atmospheric Controllers:** Dynamic world interaction via `LightingController.gd` and `HorrorEffects.gd` for deep immersion.
 
-## Run Locally
+## 🛠️ Technical Stack
 
-**Prerequisites:**  Node.js
+* **Engine:** [Godot Engine 4.x](https://godotengine.org/)
+* **Language:** **GDScript** (Optimized for high-performance real-time logic).
+* **Architecture:** Signal-based decoupled design, ensuring scalability and clean communication between game systems.
+* **Web Integration:** Project includes a Vite-based web wrapper for potential browser deployment and community engagement.
 
+## 📦 Project Structure
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```text
+godot_source/
+└── scripts/        # Core Game Systems (LevelGen, AI Stalker, Mental System)
+src/                # Web integration & landing page architecture
+├── assets/         # High-fidelity textures and environmental audio
+└── project_files/  # Godot project configuration and scene manifests
