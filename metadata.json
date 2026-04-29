@@ -1,0 +1,6 @@
+{
+  "name": "Hollow Signal",
+  "description": "A 2D psychological horror game prototype. Features modular logic, 8-way movement, and a light-reactive stalker system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
